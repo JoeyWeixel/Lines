@@ -1,0 +1,10 @@
+{
+  "name": "Lines",
+  "version": "1.0.0",
+  "description": "Web page for the lines app",
+  "main": "index.js",
+  "repository": "https://github.com/JoeyWeixel/Lines.git",
+  "author": "Joey and JJ Weixel",
+  "license": "MIT",
+  "private": false
+}
