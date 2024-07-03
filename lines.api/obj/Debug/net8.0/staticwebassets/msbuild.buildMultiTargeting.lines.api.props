@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/lines.api.props" />
+</Project>
