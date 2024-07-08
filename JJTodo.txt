@@ -1,0 +1,20 @@
+Heres ur todo and guide to what I've done on the project, consult this when u start for the day.
+
+7/7
+I have set up a basic Router. A Router is a component that uses the address url
+past the domain name to display content on a page. (After https://somewebsite.com/)
+the last slash in that domain is where the router takes over. The router will display
+a specific react component based on that url route. So, .com/home could display a 
+homepage, .com/profile could display a user profile. We will get into securing
+our router later so that not anyone can access a users profile page.
+
+I also set up a basic homepage. This is what is called a React Component.
+Essentially what a react component is is a typescript function that returns html
+elements. These elements are then loaded onto your webpage as an actual viewable
+piece. You can see tailwind being used in the "ClassName" variable of the JSX
+components (the <SomeComponent> parts of the return statement, its basically just
+html syntax in typescript). All of the w-10 or h-12 or bg-blue are shorthand notation
+for css documents. All the available classes can be found at tailwindcss.com, look
+at it. You can also create your own classes (look up how to do that).
+
+Remember you can view all parts of the webpage by doing "yarn dev"
