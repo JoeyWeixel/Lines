@@ -14,23 +14,25 @@ const Authenticate : React.FC = () => {
 const Router = createBrowserRouter([
   {
     path: "/",
-    element: <SplashPage />
-  },
-  {
-    path: "/login",
-    element: <LoginPage />
-  },
-  {
-    path: "/authenticated",
-    element: <Authenticate />,
-    children: [
+    element: <SplashPage />,
+    children : [
       {
-        path: "/home",
-        element: <HomePage />
+        path: "/login",
+        element: <LoginPage />
       },
       {
-        path: "/profile",
-        element: <ProfilePage />
+        path: "/authenticated",
+        element: <Authenticate />,
+        children: [
+          {
+            path: "home",
+            element: <HomePage />
+          },
+          {
+            path: "profile",
+            element: <ProfilePage />
+          },
+        ]
       },
     ]
   },
