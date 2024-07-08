@@ -2,7 +2,14 @@ import LoginPage from "@/pages/auth/login/LoginPage";
 import HomePage from "@/pages/home/HomePage";
 import ProfilePage from "@/pages/profile/ProfilePage";
 import SplashPage from "@/pages/splash/SplashPage";
-import { Outlet, createBrowserRouter, useNavigate } from "react-router-dom";
+import { Navigate, Outlet, createBrowserRouter } from "react-router-dom";
+
+const Authenticate : React.FC = () => {
+  //TODO - Authentication hook
+  const isAuthenticated = true;
+
+  return isAuthenticated ? <Outlet /> : <Navigate to="/login" />;
+}
 
 const Router = createBrowserRouter([
   {
@@ -28,13 +35,5 @@ const Router = createBrowserRouter([
     ]
   },
 ]);
-
-const Authenticate : (React.FC | void) = () => {
-  const navigate = useNavigate();
-  //TODO - Authentication hook
-  const isAuthenticated = true;
-
-  return isAuthenticated ? <Outlet /> : navigate("/login");
-}
 
 export default Router
