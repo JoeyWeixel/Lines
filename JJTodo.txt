@@ -8,7 +8,7 @@ a specific react component based on that url route. So, .com/home could display 
 homepage, .com/profile could display a user profile. We will get into securing
 our router later so that not anyone can access a users profile page.
 
-I also set up a basic homepage. This is what is called a React Component.
+Im also setting up a basic homepage. This is what is called a React Component.
 Essentially what a react component is is a typescript function that returns html
 elements. These elements are then loaded onto your webpage as an actual viewable
 piece. You can see tailwind being used in the "ClassName" variable of the JSX
